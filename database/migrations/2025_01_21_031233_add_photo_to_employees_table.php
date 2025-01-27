@@ -14,15 +14,10 @@ class AddPhotoToEmployeesTable extends Migration
     public function up()
     {
         Schema::table('employees', function (Blueprint $table) {
-            $table->string('photo')->nullable()->after('hire_date');
+            $table->string('photo')->nullable(); // ฟิลด์สำหรับเก็บ path ของรูปภาพ
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::table('employees', function (Blueprint $table) {

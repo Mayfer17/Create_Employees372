@@ -11,8 +11,9 @@
             <p class="card-text">Hire Date: {{ $employee->hire_date }}</p>
             <p class="card-text">Birth Date: {{ $employee->birth_date }}</p>
             <p class="card-text">Gender: {{ $employee->gender }}</p>
-            @if($employee->photo)
-                <img src="{{ asset('storage/' . $employee->photo) }}" alt="Employee Photo" class="w-32 h-32 rounded-full">
+             @if($employee->photo)
+                <img src="{{ asset('storage/' . $employee->photo) }}" alt="Employee Photo" class="w-32 h-32 rounded-full"><img src="/storage/men.jpg" alt="Employee Photo" class="w-32 h-32 rounded-full">
+                {{-- <img src="{{ asset('storage/' . $employee->photo) }}" alt="Employee Photo" class="w-32 h-32 rounded-full"> --}}
             @endif
         </div>
     </div>
